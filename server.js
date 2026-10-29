@@ -1,6 +1,9 @@
-
+const cors = require("cors");
 const express = require("express");
-const app = express();
+const app = express()
+app.use(cors({
+    origin: "https://srinathjanga.github.io"
+    }));
 
 app.use(express.json());
 
